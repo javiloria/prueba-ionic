@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build": "ionic-app-scripts build --webpack ./config/webpack.dev.config.js",
+    "build": "ng build",
     "minify": "ionic-app-scripts minify --cleancss ./config/cleancss.config.js"
   },
   "private": true,
