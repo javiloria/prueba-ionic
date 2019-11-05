@@ -6,10 +6,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build": "ionic-app-scripts build --webpack ./config/webpack.dev.config.js",
+    "minify": "ionic-app-scripts minify --cleancss ./config/cleancss.config.js"
   },
   "private": true,
   "dependencies": {
@@ -87,5 +88,8 @@
       "android",
       "ios"
     ]
+  },
+  "config": {
+    "ionic_cleancss": "./config/cleancss.config.js"
   }
 }
