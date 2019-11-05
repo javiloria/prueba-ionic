@@ -39,7 +39,7 @@
     "core-js": "^3.3.2",
     "rxjs": "~6.5.3",
     "zone.js": "^0.10.2",
-    "@ionic/app-scripts": "^2.1.4",
+    "@ionic/app-scripts": "^3.2.0",
     "typescript": "~3.4.3"
   },
   "devDependencies": {
