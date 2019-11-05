@@ -1,1 +1,1 @@
-web: ionic serves
+web: ionic serve
