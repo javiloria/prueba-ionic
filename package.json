@@ -8,12 +8,7 @@
     "build": "ionic-app-scripts build",
     "lint":"ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve",
-    "ng": "ng",
-    "start": "ng serve",
-    "test": "ng test",
-    "e2e": "ng e2e",
-    "minify": "ionic-app-scripts minify --cleancss ./config/cleancss.config.js"
+    "ionic:serve": "ionic-app-scripts serve"
   },
   "private": true,
   "dependencies": {
