@@ -4,12 +4,15 @@
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint":"ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
-    "lint": "ng lint",
     "e2e": "ng e2e",
-    "build": "ng build",
     "minify": "ionic-app-scripts minify --cleancss ./config/cleancss.config.js"
   },
   "private": true,
