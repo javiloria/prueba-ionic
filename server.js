@@ -60,7 +60,7 @@ app.get("/jugador", urlencodedParser, (req, res) => {
 client.query('select * from usuario;'
   , (err, response) => {
   if (err) throw err;
-  res.json(response)
+  res.json(response.rows)
   client.end();
 });
 
