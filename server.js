@@ -20,7 +20,12 @@ app.use(
     exposedHeaders: "x-access-token"
   })
 );*/
+const { Client } = require('pg');
 
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: true,
+});
 app.use(express.static('www'));
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
@@ -50,8 +55,16 @@ app.post("/registrarusuario", urlencodedParser, (req, res) => {
 // el numero de player logre que se hiciera automatico , genial !
 app.get("/jugador", urlencodedParser, (req, res) => {
   console.log(" GET /jugador:");
-  res.json({ status: "success", message: YO });
+  client.connect();
+
+client.query('SELECT table_schema,table_name FROM information_schema.tables;'
+  , (err, response) => {
+  if (err) throw err;
+  res.json(response.rows)
 });
+client.end();
+});
+
 
 //metodo que pinta todo en el angular
 app.get("/partidas", urlencodedParser, (req, res) => {
