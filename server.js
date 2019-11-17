@@ -57,7 +57,7 @@ app.get("/jugador", urlencodedParser, (req, res) => {
   console.log(" GET /jugador:");
   client.connect();
 
-client.query('SELECT table_schema,table_name FROM information_schema.tables;'
+client.query('select * from usuario;'
   , (err, response) => {
   if (err) throw err;
   res.json(response)
