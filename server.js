@@ -61,7 +61,7 @@ client.query('select * from usuario;'
   , (err, response) => {
   if (err) throw err;
   res.json(response.rows)
-  client.end();
+ // client.end();
 });
 
 });
