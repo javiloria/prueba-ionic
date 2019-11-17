@@ -61,8 +61,9 @@ client.query('SELECT table_schema,table_name FROM information_schema.tables;'
   , (err, response) => {
   if (err) throw err;
   res.json(response)
+  client.end();
 });
-client.end();
+
 });
 
 
