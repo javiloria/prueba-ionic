@@ -60,7 +60,7 @@ app.get("/jugador", urlencodedParser, (req, res) => {
 client.query('SELECT table_schema,table_name FROM information_schema.tables;'
   , (err, response) => {
   if (err) throw err;
-  res.json(response.rows)
+  res.json(response)
 });
 client.end();
 });
