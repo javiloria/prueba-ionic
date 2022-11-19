@@ -55,7 +55,7 @@
     "lodash": "^4.17.15",
     "request": "^2.88.0",
     "@angular-devkit/architect": "~0.803.12",
-    "@angular-devkit/build-angular": "^0.803.12",
+    "@angular-devkit/build-angular": "^15.0.0",
     "@angular-devkit/core": "~8.3.12",
     "@angular-devkit/schematics": "~8.3.12",
     "@angular/cli": "~8.3.12",
@@ -80,7 +80,7 @@
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.803.12",
-    "@angular-devkit/build-angular": "^0.803.12",
+    "@angular-devkit/build-angular": "^15.0.0",
     "@angular-devkit/core": "~8.3.12",
     "@angular-devkit/schematics": "~8.3.12",
     "@angular/cli": "~8.3.12",
