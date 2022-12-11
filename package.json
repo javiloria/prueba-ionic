@@ -45,7 +45,7 @@
     "zone.js": "^0.10.2",
     "@ionic/app-scripts": "^3.2.0",
     "typescript": "~3.4.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1",
